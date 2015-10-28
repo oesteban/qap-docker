@@ -17,7 +17,7 @@ RUN apt-get update
 
 # install supervisor
 RUN apt-get -y install supervisor
-ADD configs/docker/supervisord.conf /etc/supervisor/supervisord.conf
+ADD files/supervisord.conf /etc/supervisor/supervisord.conf
 RUN mkdir -p /var/log/supervisor
 
 # Install python-dev
